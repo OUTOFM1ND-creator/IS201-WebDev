@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Football vs AI</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: monospace;
+    background: #141414;
+    color: white;
+}
+
+.app {
+    max-width: 600px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+button {
+    margin: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.box {
+    margin-top: 20px;
+    padding: 15px;
+    background: #222;
+    border-radius: 8px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="app">
+    <h2>🏈 Play Football vs AI</h2>
+
+    <p>Choose your play:</p>
+
+    <button onclick="play('run')">Run</button>
+    <button onclick="play('pass')">Pass</button>
+    <button onclick="play('kick')">Kick</button>
+    <button onclick="play('trick')">Trick Play</button>
+
+    <div class="box" id="output">Make a play to start.</div>
+
+    <br>
+    <a href="fromScratch.html" style="color:white;">← Back to main page</a>
+</div>
+
+<script>
+function play(choice) {
+    const output = document.getElementById("output");
+
+    let response = "";
+
+    if (choice === "run") {
+        response = ["Successful run!", "Stuffed at line!", "Breakaway run!", "Fumble!"][Math.floor(Math.random()*4)];
+    }
+    else if (choice === "pass") {
+        response = ["Complete pass!", "Interception!", "Touchdown pass!", "Incomplete pass!"][Math.floor(Math.random()*4)];
+    }
+    else if (choice === "kick") {
+        response = ["Field goal good!", "Missed kick!", "Blocked kick!", "Extra point good!"][Math.floor(Math.random()*4)];
+    }
+    else {
+        response = ["Trick play works!", "AI stops it!", "Big gain!", "Total disaster!"][Math.floor(Math.random()*4)];
+    }
+
+    output.innerText = response;
+}
+</script>
+
+</body>
+</html>

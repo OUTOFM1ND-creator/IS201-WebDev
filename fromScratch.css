@@ -1,0 +1,98 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 180px;
+    width: 100%;
+
+    background-image: url("../startbootstrap-clean-blog-gh-pages/assets/img/channels4_banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    text-shadow:
+        1px 1px 0 rgb(65, 65, 65),
+       -1px 1px 0 rgb(65, 65, 65),
+        1px -1px 0 rgb(65, 65, 65),
+       -1px -1px 0 rgb(65, 65, 65);
+
+    color: #000000;
+}
+
+.header h1 {
+    font-size: 90px;
+    font-family: monospace;
+}
+
+.mainbody{
+    background-color: #141414;
+    font-family: monospace;
+    color: #e5e3cf;
+    
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.mainbody img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainbodyText {
+    font-size: 24px;
+    text-align: center;
+}
+
+.mainbodyText h3 {
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.mainbodyText ul,
+.mainbodyText ol {
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+}
+
+.viz-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.tableauPlaceholder {
+    width: 70% !important;
+    max-width: 900px;
+}
+
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    background-color: #141414;
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    max-width: 650px;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+}
+
+.mainbody h2 {
+    text-align: center;
+    font-size: 46px;
+    font-weight: bold;
+}
+
